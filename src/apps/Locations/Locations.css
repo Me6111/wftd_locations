@@ -1,0 +1,93 @@
+
+
+
+
+
+
+
+.Locations-app-container {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Locations-app-container-title {
+    background-color: rgba(0, 0, 0); 
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+
+    width: 100%;
+    height: 20%;
+}
+
+/* CSS rule to push the first element to the bottom */
+.Locations-app-container > :first-child {
+    margin-bottom: auto;
+}
+
+
+
+
+.Locations-app-title {
+    width: 100%;
+    height: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-family: 'CustomFont', sans-serif; /* unique font name */
+    margin-left: 0.6vw; /*  original letter spacing for larger screens */
+    letter-spacing: 1vw; /* letter spacing as needed for smaller screens */
+    word-spacing: 0.5vw; /* word spacing as needed for smaller screens */
+    font-size: 3vw; /* font size as needed for smaller screens */
+}
+
+@media screen and (min-width: 750px) {
+    .Locations-app-title {
+        margin-left: 8.5px; /*  original letter spacing for larger screens */
+        letter-spacing: 15px; /*  original letter spacing for larger screens */
+        word-spacing: 10px; /*  original word spacing for larger screens */
+        font-size: 15px; /*  original font size for larger screens */
+    }
+}
+
+
+
+/* Media query for larger screens */
+@media screen and (min-width: 768px) {
+    .Locations-app-title {
+        letter-spacing: 15px; /*  original letter spacing for larger screens */
+        word-spacing: 10px; /*  original word spacing for larger screens */
+        font-size: 15px; /*  original font size for larger screens */
+    }
+}
+
+.Locations-app-container-content {
+    width: 100%;
+    height: 80%;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; /* Use space-around for equal space top and bottom */
+    align-items: center;
+
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+

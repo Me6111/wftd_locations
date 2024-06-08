@@ -1,0 +1,177 @@
+
+
+
+
+
+
+
+
+.main-menu-curtain {
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1001;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.main-menu-curtain:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+
+
+.main-menu-container {
+    z-index: 1002;
+    background-color: rgba(0, 145, 0, 0.56);
+    background-color: rgba(0, 0, 0, 0.7);
+
+    border: 1px solid rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0, 0);
+
+    border-radius: 15px;
+
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.main-menu-container-title {
+    background-color: rgba(0, 0, 0); 
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+
+    width: 100%;
+    height: 20%;
+}
+
+
+/* Default styles for smaller screens */
+.main-menu-title {
+    width: 100%;
+    height: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-family: 'CustomFont', sans-serif; /* unique font name */
+    margin-left: 0.6vw; /*  original letter spacing for larger screens */
+    letter-spacing: 1vw; /* letter spacing as needed for smaller screens */
+    word-spacing: 0.5vw; /* word spacing as needed for smaller screens */
+    font-size: 3vw; /* font size as needed for smaller screens */
+}
+
+
+/* Media query for larger screens */
+@media screen and (min-width: 750px) {
+    .main-menu-title {
+        margin-left: 8.5px; /*  original letter spacing for larger screens */
+        letter-spacing: 15px; /*  original letter spacing for larger screens */
+        word-spacing: 10px; /*  original word spacing for larger screens */
+        font-size: 15px; /*  original font size for larger screens */
+    }
+}
+
+
+.main-menu-container-content {
+    width: 100%;
+    height: 80%;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; /* Use space-around for equal space top and bottom */
+    align-items: center;
+
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+
+.main-menu-option {
+    height: 8%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: rgba(255, 255, 255, 0.7);
+    border: 0;
+    text-transform: capitalize; /* Capitalize the text */
+    
+    text-decoration: none; /* Remove the underline */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    background: linear-gradient(10deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0) 100%);
+
+    font-family: 'CustomFont', sans-serif; /* unique font name */
+    
+    
+    letter-spacing: 11px; 
+    word-spacing: 22px; 
+    font-size: 8px; 
+    
+}
+.option-sign {
+    margin-left: 11px;
+}
+
+
+@media screen and (min-width: 750px) {
+    .main-menu-option {
+        letter-spacing: 14px; 
+        word-spacing: 28px; 
+        font-size: 11px;    
+    }
+}
+
+@media screen and (min-width: 750px) {
+    .option-sign {
+        margin-left: 14px;   
+    }
+}
+
+
+.main-menu-option:hover {
+    background: linear-gradient(10deg, rgba(0, 0, 0, 0) 0%, rgba(0, 128, 0, 0.65) 50%, rgba(0, 0, 0, 0) 100%);
+
+}
+
+
+.main-menu-option:hover {
+    color: white;
+    box-shadow: 0 5px 5px -5px  green, 
+                0 -5px 5px -5px green; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
